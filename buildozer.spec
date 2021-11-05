@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Mobile App 001
+title = Ping Pong Game
 
 # (str) Package name
-package.name = mobileapp001
+package.name = pingponggame
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.wiseplat
+package.domain = org.ricci135
 
 # (str) Source code where the main.py live
 source.dir = .
