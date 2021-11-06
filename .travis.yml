@@ -3,7 +3,7 @@ dist: focal
 language: python
 
 python:
-  - 3.9
+  - 3.8
 
 install:
   - sudo apt -y install python3-distutils
@@ -24,11 +24,11 @@ install:
   - pip3 install --upgrade Cython==0.29.19 virtualenv
   - export PATH=$PATH:~/.local/bin/
   - ls -l
-  - yes | travis_wait 20 buildozer android debug
+  - yes | buildozer android debug
   - ls -l
   - ls bin/ -l
   - echo "TODO"
   - gem install dpl --pre
-  - dpl releases --token $GITHUB_TOKEN --file "bin/pingponggame-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
+  - dpl releases --token $GITHUB_TOKEN --file "bin/mobileapp001-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
   - echo "TODO 2"
 
